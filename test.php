@@ -11,4 +11,4 @@ do {
 
     echo "\nDeine Auswahl: ";
     $choice = trim(fgets(STDIN));
-} while (1);
+} while ($choice != "4");
