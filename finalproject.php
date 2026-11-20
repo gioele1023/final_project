@@ -41,5 +41,15 @@ do {
         } else {
             echo "Bitte gib einen Namen ein.\n";
         }
+    } elseif ($choice == "2") {
+        echo "\nDeine gegessenen Lebensmittel:\n";
+
+        if (count($foods) == 0) {
+            echo "Du hast noch nichts hinzugefügt.\n";
+        } else {
+            foreach ($foods as $food) {
+                echo "- " . $food . "\n";
+            }
+        }
     }
 } while ($choice != "4");
