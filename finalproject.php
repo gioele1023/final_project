@@ -51,5 +51,7 @@ do {
                 echo "- " . $food . "\n";
             }
         }
+    } elseif ($choice == "3") {
+        echo "\nDu hast insgesamt " . $total . " Kalorien gegessen.\n";
     }
 } while ($choice != "4");
